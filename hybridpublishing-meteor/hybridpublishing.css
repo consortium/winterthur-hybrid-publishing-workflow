@@ -76,6 +76,10 @@ p i {
     font-family: "Charter";
     font-style: italic;
 }
+blockquote {
+    font-family: "Charter";
+    font-style: italic;
+}
 
 
 .content-center {
