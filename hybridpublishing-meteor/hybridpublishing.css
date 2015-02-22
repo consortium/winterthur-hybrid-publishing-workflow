@@ -72,6 +72,14 @@ p {
     line-height: 25px;
     padding-bottom: 25px;
 }
+li {
+    font-family: "Montserrat";
+    font-size: 20px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
 p i {
     font-family: "Charter";
     font-style: italic;
