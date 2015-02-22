@@ -79,8 +79,20 @@ p i {
 blockquote {
     font-family: "Charter";
     font-style: italic;
+    font-size: 20px;
+    max-width: 500px;
+    margin: auto;
+    line-height: 25px;
+    padding-bottom: 25px;
 }
-
+q {
+    font-family: "Charter";
+    font-style: italic;
+}
+q:before, q:after {
+    content:'';
+    content:none;
+}
 
 .content-center {
     margin: auto;
