@@ -101,7 +101,30 @@ q:before, q:after {
     content:'';
     content:none;
 }
-
+.TOC {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 250px;
+}
+.TOC h1 {
+    font-size: 15px;
+    text-align: left;
+    text-transform: none;
+    padding-top: 8px;
+    padding-bottom: 0px;
+}
+.TOC h2 {
+    font-size: 15px;
+    text-align: left;
+    text-transform: none;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+.TOC a {
+    border-bottom: none;
+}
 .content-center {
     margin: auto;
     max-width: 800px;
@@ -117,6 +140,11 @@ img {
     height: 600px;
     border: 3px solid black;
 }
-.whiteboard img {
 
+@media screen and (max-width: 1200px) {
+    .TOC {
+        position: relative;
+        width: 650px;
+        margin: auto;
+    }
 }
