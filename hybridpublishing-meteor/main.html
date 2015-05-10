@@ -110,24 +110,29 @@
         <section data-type="sect2">
         <h2 id="3.3">From InDesign to HTML</h2>
         <p>The usual workflow with Transpect is to set up a ‘conversion pipeline’ from one format to another. This pipeline is then configured and tweaked to best accomodate the specificities of the input. For our experiment with the Manifeste catalogue, we first opted to convert the inDesign file to HTML. We chose HTML because it is the lingua franca of digital publishing: it is used both on websites and eBooks, and increasingly in mobile applications. It is easy to store and repurpose.</p>
+        <p>The conversion performed upon the Manifeste file managed to extract the texts and do a good job of converting the text styles to the CSS format as used by HTML.</p>
         <p>The caveat mentioned for art publishers becomes apparent again. While we experimented with converting the inDesign file of the Manifeste catalogue, we found ourselves adapting the pipeline to the specificities of the publication. Letex’s Gerrit Imsieke also came up with a number of changes we could make to the inDesign file itself.</p>
         <p>Gerrit also provided a series of guidelines for designers working in inDesign, that make their files easier to process (we added these as an annex). We suggest that Winterthur asks the designers for upcoming catalogues to follow them.</p>
         <p>The recommendations will make the process of extracting content easier—but it is probable that every single publication will still require a certain amount of customisation.</p>
 
-        <p>The following schema proposes a workflow for the upcoming publication (and the past publications), in which the paper publication is still the main source (last version stored in the INDD file after last proofreading).</p>
+        <p>The extracted content then is ready to use by a digital designer—whether it is to make an ePub, a web publication or a mobile application. By itself this content </p>
 
-
+        <p>The following schema proposes a workflow for the publication currently in development, and for earlier publications in which the paper publication is still the main source (last version stored in the INDD file after last proofreading).</p>
 
         <img src="hybrid-workflow-next.svg" />
-        <p>The second step, for the next publications, is to consider the publication as a collection of multimedia contents: the different elements to be published by the Fotomuseum (images, legends, texts, videos) are selected and created, and the relations between these elements are described. In a period of transition, the elaboration and the design of the paper version and the digital ones are still quite separated.</p>
-        <p>…</p>
+
+        <h2 id="3.4">Creating a hybrid publishing strategy</h2>
+
+        <p>If useful for existing publications, a workflow based on deconstructing the inDesign file does not seem ideal for developing a future hybrid publishing strategy.</p>
+
+        <p>We have touched upon some of the technical limitations of this approach: the deconstruction can not be fully automatised. More importantly, following this approach would make each publication dependent on the book publication, which has to be finished first.</p>
+
+        <p>A more logical approach would then be to explode the book beforehand: the different elements to be published by the Fotomuseum (images, legends, texts, videos) are selected and created (or digitised), and the relations between these elements are described. The paper publication builds upon this curated set of elements, but so can other types of (digital) publications (more on this in section 4).</p>
+
+        <p>A challenge for the museum is how to coordinate the relation between various publication formats. At the moment the paper design and the digital design seem to be quite separated. The museums publication director could instigate relation between these designers, or choose to hire one hybrid designer that tackles both media, or work with an art director that oversees the relations between the various publication media. Such an approach seems necessary to reach a more global hybrid publishing strategy, that will give a greater coherence between all the formats, and more complementarity.</p>
+
         <img src="hybrid-workflow-future.svg" />
 
-        <p>For further publications, The aim is to reach a more global hybrid publishing strategy, that will give a greater coherence between all the formats, and more complementarity.</p>
-
-        <h2>Hybrid publication designer</h2>
-        <p>In this workflow, a new and central position appears, that of a hybrid art director/graphic designer who will take care of the publication strategy as a whole, and work on the coherence between all the formats chosen.</p>
-        <p>…</p>
         </section>
         </section>
 
@@ -137,13 +142,15 @@
 
         <section data-type="sect2">
         <h2>HTML as a basis</h2>
-        <p>Going in the sense of the new digital strategy of the Fotomuseum, this new workflow puts the HTML format and the web database at the center of the publishing strategy. The HTML content becomes the source for all the materials, that are stored in a database with a versionning system, can be modified online through an editing interface (CMS), and then used in the different outputs.</p>
+        <p>Going in the sense of the new digital strategy of the Fotomuseum, this new workflow puts the HTML format and the web database at the center of the publishing strategy. The HTML content becomes the source for all the materials, that are stored in a database with a versioning system, can be modified online through an editing interface (CMS), and then used in the different outputs.</p>
+
+        <p>As a sidenote, the fact that the HTML is going to be used in a publishing workflow does place extra demands on the CMS, that do not exist for a strictly web-facing CMS. The most important exchange technology in the publishing industry is XML. Tools like inDesign know how to use XML. It is therefore important that the CMS stores its HTML in the specific form of HTML that is compatible with XML: XHTML5. inDesign is famously picky when it comes to importing XML, so additionally the CMS implementation should be tested with inDesign’s import feature.</p>
 
         <p style="text-align: center"><img src="hybrid-HTML-schema.svg" /></p>
 
         <p>This system answers the very practical question of the “after-design” proofreading modifications, problematic in every publication process: how to integrate the corrections in the design easily and safely? Where is the last version stored, and is it easily re-usable? Particularily in the context of hybrid (and efficient) publishing, a single source is essential. One source to rely on, and on which all the outputs can be based.</p>
-        <p>Versionning systems were developed in the context of programing culture, to keep trace of the modifications on a code file. These systems improve collaborative workflows, and make it easier to follow the changes in a file.</p>
-        <p>Transposed in a print-layout/graphic design context, the graphic designer could import all the datas again, in the layout file with the risk of loosing layout detail’s adjustments, or choose to add only the modifications, which are very easily identified with a versionning system…</p>
+        <p>Versioning systems were developed in the context of programing culture, to keep trace of the modifications on a code file. These systems improve collaborative workflows, and make it easier to follow the changes in a file.</p>
+        <p>Transposed in a print-layout/graphic design context, the graphic designer could import all the datas again, in the layout file with the risk of loosing layout detail’s adjustments, or choose to add only the modifications, which are very easily identified with a versioning system…</p>
         </section>
 
         <section data-type="sect2">
@@ -159,9 +166,9 @@
 
         <section data-type="sect2">
         <h2 id="4.3">Open licenses</h2>
-        <p>The future of publications will be hybrid and multi-formats. Which doesn’t make things easy in terms of licencing. Museums will have to negotiate more extensive and open-ended permissions with rights holders.</p>
-        <p>An alternative to such extensive custom licence agreements would be to ask contributors to license their work under an open licence.</p>
-        <p>For instance, the Creative Commons license “Attribution-ShareAlike” or “<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>” allows the re-use of the work for any purpose and through any media, as long as the new use credits the author and license the new creations under the identical terms.</p>
+        <p>The future of publications will be hybrid and multi-formats. Which does not make things easy in terms of licencing. Museums will have to negotiate more extensive and open-ended permissions with rights holders.</p>
+        <p>An alternative to such extensive custom license agreements would be to ask contributors to license their work under an open license.</p>
+        <p>For instance, the Creative Commons license “Attribution” or “<a href="http://creativecommons.org/licenses/by/4.0/">CC BY</a>” allows the re-use of the work for any purpose and through any media, as long as the new use credits the author.</p>
         <p>This enables an open-ended usage of the work by the museum. In addition, this enables new publishing strategies, and new possibilities of involvement for the public.</p>
 
        <blockquote>Our research shows that a new phase of digital strategy is taking hold in cultural organizations. Whereas the last five years saw them focus predominantly on social media marketing and engagement, we have identified a more recent shift to exploring mature digital channels. Examples of these are–online learning platforms, digital books, open licence content repositories and collaborative research platforms. They demonstrate that the Web has become the platform of choice for critical discourse. The shift we see expresses a horizontal tendency, where participants (audiences) are engaged as co-producers and invited to share and reuse content. (Hybrid Publishing Consortium)</blockquote>
