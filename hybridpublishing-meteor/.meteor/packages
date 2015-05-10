@@ -11,3 +11,4 @@ backbone
 jquery
 underscore
 less
+iron:router
